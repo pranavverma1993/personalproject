@@ -1,0 +1,190 @@
+.image{
+  background-image:url('../../assets/login.jpg'); 
+  background-position:100% 50%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden !important;
+  outline: 0;
+  }
+
+.fast {
+    height: 36px;
+    margin-top: 270px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.fast p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateY(50%);
+ -webkit-transform:translateY(50%);	
+ transform:translateY(50%);
+ /* Apply animation to this element */	
+ -moz-animation: fast 1s linear infinite alternate;
+ -webkit-animation: fast 1s linear infinite alternate;
+ animation: fast 1s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes fast {
+ 0%   { -moz-transform: translateY(50%); }
+ 100% { -moz-transform: translateY(-50%); }
+}
+@-webkit-keyframes fast {
+ 0%   { -webkit-transform: translateY(50%); }
+ 100% { -webkit-transform: translateY(-50%); }
+}
+@keyframes fast {
+ 0%   { 
+ -moz-transform: translateY(50%); /* Browser bug fix */
+ -webkit-transform: translateY(50%); /* Browser bug fix */
+ transform: translateY(50%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(-50%); /* Browser bug fix */
+ -webkit-transform: translateY(-50%); /* Browser bug fix */
+ transform: translateY(-50%); 
+ }
+}
+
+.text{
+    font-size: 45px;
+    color:#1aff1a ;
+}
+
+.option-meh:focus {
+  outline: 0px;
+}
+.option-happy:focus {
+  outline: 0px;
+}
+.option-sad:focus {
+  outline: 0px;
+}
+
+.option-game:focus {
+  outline: 0px;
+}
+.option-sad  {
+  color: #006ce3;
+  letter-spacing: 1px;
+  padding: 5px 30px;
+  background: #ffffff !important;
+  border: #ffffff;
+  border-radius: 20px !important;
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-family: Open Sans;
+  border: 1px solid #006ce3;
+  height: 32px !important;
+}
+
+.option-meh  {
+  color: #006ce3;
+  letter-spacing: 1px;
+  padding: 5px 30px;
+  background: #ffffff !important;
+  border: #ffffff;
+  border-radius: 20px !important;
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-family: Open Sans;
+  border: 1px solid #006ce3;
+  height: 32px !important;
+}
+
+
+.option-game  {
+  color: #006ce3;
+  letter-spacing: 1px;
+  padding: 5px 30px;
+  background: #ffffff !important;
+  border: #ffffff;
+  border-radius: 20px !important;
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-family: Open Sans;
+  border: 1px solid #006ce3;
+  height: 32px !important;
+}
+body {
+    font-family: helvetica;
+    background: #eee;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  form {
+    margin-top: 2em;
+  }
+  
+  .hide {
+    position: absolute;
+    left: -10000px;
+  }
+  
+  .option-happy  {
+    color: #006ce3;
+    letter-spacing: 1px;
+    padding: 5px 30px;
+    background: #ffffff !important;
+    border: #ffffff;
+    border-radius: 20px !important;
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    font-family: Open Sans;
+    border: 1px solid #006ce3;
+    height: 32px !important;
+  }
+  
+ 
+   /* .option-happy:hover,.option-happy:focus, .option-happy:active{
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+    } 
+  
+  
+  .option-sad:hover,.option-happy:active {
+        cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png"), auto;
+      }
+     
+    
+   .option-meh:hover,.option-happy:active {
+        cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
+      } 
+   
+      .option-happy:focus{
+        cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+        }
+      
+      .option-sad:focus {
+            cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png"), auto;
+          }
+         
+        
+       .option-meh:focus {
+            cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
+          } 
+          */

@@ -1,0 +1,67 @@
+
+   <div class="image" >
+
+<div class="container">
+ 
+<div class="row" style="margin-top: 200px;">
+
+<div class="col-sm-6 col-md-6 col-lg-6" >
+</div>
+<div class="col-sm-6 col-md-8 col-lg-6" style="text-align:center;color: white;">
+UserName <span class="star">*</span>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6 col-md-6 col-lg-6">
+</div>
+<div class="col-sm-6 col-md-6 col-lg-6" style="text-align:center">
+<input  #username  autofocus class="inputBox"  (keyup)="loggedin()" [(ngModel)]="UserName" required minlength="5"  type="text" #u1 /><br>
+</div>
+</div>
+  
+<div class="row">
+<div class="col-sm-6 col-md-6 col-lg-6">
+</div>
+<div class="col-sm-6 col-md-6 col-lg-6" style="text-align:center;color: white;">
+Password <span class="star">*</span>
+</div>
+</div>
+          
+<div class="row">
+<div class="col-sm-6 col-md-6 col-lg-6">
+</div>
+<div class="col-sm-6 col-md-6 col-lg-6" style="text-align:center;color: white;">
+<input class="inputBox" (keyup)="loggedin()" minlength="5" [(ngModel)]="password" required type="password" #p2 /><br/>
+<input type="checkbox"
+ #checkBox="ngModel" [(ngModel)]="condition" name="checkBox">
+<span >Show Password</span>
+
+<div *ngIf="condition">
+            {{password}}
+        </div>
+        </div>
+</div>
+
+
+<div class="row">
+ <div class="col-sm-6 col-md-6 col-lg-6">
+</div>
+<div class="col-sm-6 col-md-6 col-lg-6" style="text-align:center">
+<button type="submit" class="wed-primary" [disabled]="buttonDisabled" (click)="check(u1.value, p2.value)" (keyup.enter)="check(u1.value, p2.value)" (keydown.enter)="check(u1.value, p2.value)" (keypress.enter)="check(u1.value, p2.value)">Login</button>
+</div>
+</div>
+
+
+    <div class="row top">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6" style="text-align:center">
+                        <span>{{ msg }}</span>
+                    </div>
+       
+    </div>
+    
+</div>
+
+</div>

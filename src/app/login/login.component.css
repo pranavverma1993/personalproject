@@ -1,0 +1,42 @@
+.top{
+    margin-top: 20px;
+}
+
+.star{
+    color: red;
+}
+
+.image{
+     background-image:url('../../assets/nature2.jpg'); 
+    background-position:50% 5%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden !important;
+    outline: 0;
+    
+  }
+  /* #love {
+   cursor: "url(/assets/love.jpg)",auto
+    
+    } */
+
+    
+
+
+
+.inputBox{
+    border-radius: 20px; 
+    padding-left: 10px
+}
+
+.inputBox:focus {
+    outline: 0px;
+  }
+
+
+
+
+
+
+
+

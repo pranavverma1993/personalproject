@@ -1,0 +1,79 @@
+<div class="image">
+    <div class="container">
+            <!-- <p>{{genderValue}}</p> -->
+        <div class="row" style="margin-top: 50px;">
+
+            <div class="col-sm-9 col-md-9 col-lg-9" >
+                    <button type="button" class="option-game" name="game" id="game" (click)="game()">Let's play Rock Paper Game</button>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3" >
+                <button style="margin-top:10px" type="button"  (click)="logout()" class="opt-secondary">Logout</button>
+            </div>
+            </div>
+
+
+            <div *ngIf="maleSelection" class="fast text" style="margin-top: 80px;">
+                <p>HELLO  HANDSOME {{data | uppercase}}</p>
+              
+                </div> 
+
+                <div *ngIf="femaleSelection" class="fast text" style="margin-top: 80px;">
+
+                        <p>HELLO  BEAUTIFUL {{data | uppercase}}</p>
+
+                </div>
+
+
+
+
+<form>
+    <h1 style="margin-top:130px">How are you feeling today?</h1>
+    <div >
+        <img *ngIf="happy"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png" id="happy1" alt="Medical"  />
+   </div>
+
+   
+   <div *ngIf="happymsg" style="color:white">
+    Great To Know You Are Happy Today!!
+</div>
+
+
+
+
+   <div >
+    <img *ngIf="sad" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png" id="sad1" alt="Medical" />
+</div>
+<div *ngIf="sadmsg" style="color:white">
+    Dont be sad,It's Gonna Be a Good Day
+</div>
+<div>
+    <img  *ngIf="meh"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png" id="meh1" alt="Medical" />
+</div>
+<div *ngIf="mehmsg" style="color:white">
+    It Seems Like You Are Feeling Okay Today. Cheer Up!!!
+ </div>
+    <button type="button" class="option-happy" name="happy" id="happy" (click)="stayhappy()">Happy</button>
+   
+    <button type="button" class="option-sad" name="sad" id="sad" (click)="staysad()">Sad</button>
+  
+    <button type="button" class="option-meh" name="meh" id="meh" (click)="staymeh()">Meh</button>
+  </form>
+
+  <div class="row" style="margin-top: 0px;">
+        
+<div class="col-sm-3 col-md-3 col-lg-3" style="margin-top:20px;" >
+        <button type="button" class="option-meh" name="backtoname" id="backtoname" (click)="backtoname()">Back To Credentials</button>                                                    
+
+</div>
+<div class="col-sm-6 col-md-6 col-lg-6">
+</div>
+</div>
+
+
+
+    </div>
+   </div>
+<app-feel></app-feel>
+
+
+ 

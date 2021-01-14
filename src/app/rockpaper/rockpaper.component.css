@@ -1,0 +1,84 @@
+p {
+    font-family: Lato;
+  }
+  
+  .content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
+  }
+  .flex-container{
+    display:flex;
+    width:100%;
+  }
+  
+  .flex-center{
+    align-items: center;
+    justify-content: center;
+  }
+  /* mat-card-content{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+  } */
+  
+  .content1{
+    
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  .score{
+    margin-top:.5em;
+    margin-left:2em;
+    font-size:1.5em
+  }
+  
+  .content2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .fa{
+    cursor:pointer;
+    font-size:5em;
+  }
+  
+  .selectedWeapon{
+    color: background;
+  }
+  .option-home:focus {
+    outline: 0px;
+  }
+  .option-home  {
+    color: #006ce3;
+    letter-spacing: 1px;
+    padding: 5px 30px;
+    background: #ffffff !important;
+    border: #ffffff;
+    border-radius: 20px !important;
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    font-family: Open Sans;
+    border: 1px solid #006ce3;
+    height: 32px !important;
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

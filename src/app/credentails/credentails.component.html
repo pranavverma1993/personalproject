@@ -1,0 +1,59 @@
+<div class="black" >
+        <div class="container">
+            <div class="row" style="margin-top: 50px;">
+                
+                            <div class="col-sm-9 col-md-9 col-lg-9" >
+                                 
+                            </div>
+                            <div class="col-sm-3 col-md-3 col-lg-3" >
+                                <button style="margin-top:10px" type="button"  (click)="logout()" class="opt-secondary">Logout</button>
+                            </div>
+                            </div>
+
+                <div class="row" style="margin-top: 0px;">
+                        
+                        <div class="col-sm-6 col-md-6 col-lg-6" style="text-align:center;margin-top:50px;" >
+                                        <mat-form-field class="example-form-field" >
+                                                        <mat-label>Please Enter Your Name</mat-label>
+                                                        <input autocomplete="off" #nameRef  matInput type="text" [(ngModel)]="dataName" [(ngModel)]="data"  [value]="searchValue" (keyup)="loggedin()" placeholder="Min 1 character">
+                                                       
+                                                      </mat-form-field>
+          
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                               
+                        </div>
+                        </div>
+                       <div class="row" style="margin-top: 0px;">
+                                        
+<div class="col-sm-6 col-md-6 col-lg-6" style="text-align:center;margin-top:20px;" >
+                <mat-form-field>
+                                <mat-label>Select Your Gender</mat-label>
+                                <mat-select  [(ngModel)]="genderValue" (selectionChange)="submit($event.value)">
+                                  <mat-option #gender *ngFor="let gender of genders" [value]="gender.value">
+                                    {{gender.value}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>                                                      
+                          
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-6">
+</div>
+</div> 
+
+<div class="row" style="margin-top: 0px;">
+                
+<div class="col-sm-6 col-md-6 col-lg-6" style="text-align:center;margin-top:20px;" >
+                <button type="submit" class="wed-primary" [disabled]="buttonDisabled" (click)="goToHome()" >Submit</button>                                                     
+  
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+</div>
+</div>
+
+
+
+
+
+</div>   
+</div>
