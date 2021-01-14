@@ -1,4 +1,8 @@
 
+run Bootstrap command
+npm install bootstrap
+
+Login Credentials
 Username: admin
 Password: admin
 
